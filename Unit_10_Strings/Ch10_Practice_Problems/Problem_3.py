@@ -21,7 +21,7 @@
 try:
     prompt = "Enter number: "
     while True:
-        number = input(prompt)
+        number = input(prompt).strip()
         if number == "-1":
             break
         if number.count("-") == 2:

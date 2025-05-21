@@ -14,7 +14,7 @@
 # user123@gmail.com
 prompt = "Enter an email: "
 while True:
-    validEmail = input(prompt)
+    validEmail = input(prompt).strip()
     if validEmail == "-1":
         break
     if validEmail.count("@") == 1 and validEmail.endswith(".com"):
