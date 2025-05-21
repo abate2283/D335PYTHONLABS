@@ -25,7 +25,7 @@ try:
             break
         if date_entry.count(",") == 1:
             token = date_entry.split()
-            if len(token[-1]) == 4 and token[-1].isdigit():
+            if len(token[-1]) == 4 and token[-1].isdigit() and len(token) == 3 and token[1].endswith(","):
                 print(int(token[-1]))
 
 except ValueError as e:
